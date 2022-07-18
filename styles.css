@@ -7,7 +7,6 @@
 
 body{
     /*background: #000;*/
-    min-height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -206,4 +205,17 @@ tr td:first-child{
 
 tr td{
     padding-top: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: #1f2937;
+    color: #E5E7EB;
+    padding: 40px;
+}
+
+footer a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
 }
