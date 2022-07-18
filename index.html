@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -59,29 +60,26 @@
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Wyślij wiadomość</h3>
-                    <form>
+                    <form action="https://formsubmit.co/153f30d7e8b1c3461b61d0f1657259e7" method="POST">
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Imię</label>
-                                <input type="text" placeholder="Jan Kowalski">
+                                <input type="text" name="name" placeholder="Jan Kowalski">
                             </div>
                             <div class="input-group">
                                 <label>Telefon</label>
-                                <input type="text" placeholder="+48 123 456 789">
+                                <input type="text" name="phone" placeholder="+48 123 456 789">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="email" placeholder="jankowalski@gmail.com">
-                            </div>
-                            <div class="input-group">
-                                <label>Tytuł</label>
-                                <input type="text" placeholder="Wpisz tytuł wiadomości">
+                                <input type="email" name="email" placeholder="jankowalski@gmail.com">
                             </div>
                         </div>
-                        <label>Message</label>
-                        <textarea rows="5" placeholder="Napisz swoją wiadomość"></textarea>
+                        <label>Wiadomość</label>
+                        <textarea name="message" type="text" rows="5" placeholder="Napisz swoją wiadomość"></textarea>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5502/">
                         <button type="submit">WYŚLIJ!</button>
                     </form>
                 </div>
@@ -105,5 +103,6 @@
             </div>
         </div>
     </main>
+    
 </body>
 </html>
